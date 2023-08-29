@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1678920859374" clover="3.2.0">
+  <project timestamp="1678920859374" name="All files">
+    <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2" elements="9" coveredelements="9" complexity="0" loc="5" ncloc="5" packages="1" files="1" classes="1"/>
+    <file name="filterByTerm.js" path="/Users/kaitlynparsons/projects/getting-started-with-jest/src/filterByTerm.js">
+      <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+      <line num="4" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="6" count="2" type="stmt"/>
+      <line num="7" count="2" type="stmt"/>
+      <line num="8" count="6" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>

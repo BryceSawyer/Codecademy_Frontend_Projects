@@ -1,0 +1,184 @@
+html {
+    background-image: url(./resources/istockphoto-1351502094-170667a.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+
+body {
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    margin: 100px auto;
+    border-radius: 5px;
+    box-shadow: -50px 50px 100px black;
+    background-color: aliceblue;
+
+}
+
+#name {
+    font-size: 36px;
+    font-weight: 200;
+    padding-left: 30px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.nav-items {
+    display: flex;
+    list-style-type: none;
+    margin-left: auto;
+    font-weight: 700;
+    justify-content: space-between;
+}
+
+.nav-item > a {
+    padding-left: 20px;
+    text-decoration: none;
+    box-shadow: -4px 5px 10px white;
+    padding-right: 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+.nav-item:active {
+    padding-top: 5px;
+}
+
+.nav-item > a:active {
+    box-shadow: none;
+}
+
+
+.nav-item:hover {
+    margin: 5px;
+}
+
+
+.about-me-container {
+    display: flex;
+    padding: 0px 30px;
+}
+
+
+
+.profile {
+    margin-left: auto;
+    border: solid black;
+    height: 300px;
+    margin-left: 30px;
+}
+
+h3 {
+    padding-left: 30px;
+    margin-top: 50px;
+}
+
+
+.achievements-container {
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    margin: 30px;
+    margin-bottom: 100px;
+
+}
+
+
+#skills-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+h4 {
+    padding-left: 30px;
+}
+
+#contact {
+    background-color: black;
+    margin-top: 300px;
+    padding: 20px 0px;
+    width: 100%;
+}
+
+address {
+    color: white;
+    padding-left: 30px;
+    font-size: large;
+}
+
+
+.fa-git {
+    color: #F1502F;
+
+}
+
+.fa-js {
+    color: #F7DF1E;
+}
+
+.fa-css3 {
+    color: #264de4;
+}
+
+.fa-html5 {
+    color: #f06529;
+    padding-left: 30px;
+}
+
+.fa-github {
+    padding-right: 30px;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        width: 700px;
+    }
+
+    img {
+        height: 150px
+    }
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+button {
+    box-shadow: -3px 5px 10px gray;
+    padding: 5px;
+    border: 1px solid black;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+button:active {
+    margin-top: 5px;
+    color: black;
+    box-shadow: -5px 5px 10px white;
+}
+
+i {
+    text-shadow: -2px 3px 5px white;
+}
+
+.code-profile {
+    margin-left: 30px;
+    background-color: aliceblue;
+    padding: 2px 10px;
+    border-radius: 10px 0px;
+}
