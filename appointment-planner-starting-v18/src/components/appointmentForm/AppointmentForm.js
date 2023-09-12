@@ -22,43 +22,48 @@ export const AppointmentForm = ({
 }) => {
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
+    <>
+      <form onSubmit={handleSubmit}>
+        <label htmlFor='title'></label>
         <input
+          required
           id='title'
+          name='title'
           type='text'
           value={title}
-          onChange={({ target }) => setTitle(target.value)}
-          required
+          aria-label="Appointment Title"
           placeholder="Appointment Title"
-          aria-label='Appointment Title'
+          onChange={({ target }) => setTitle(target.value)}
         />
-      </label>
-      <label>
+        <label htmlFor='date'></label>
         <input
+          required
           id='date'
+          name='date'
           type='date'
-          value={date}
           min={getTodayString()}
+          value={date}
+          aria-label='Appointment Date Picker'
           onChange={({ target }) => setDate(target.value)}
-          aria-label='Appointment Date'
         />
-      </label>
-      <label>
+        <label htmlFor='time'></label>
         <input
+          required
           id='time'
+          name='time'
           type='time'
           value={time}
+          aria-label='Appointment Time Picker'
           onChange={({ target }) => setTime(target.value)}
-          aria-label='Appointment Date'
         />
-      </label>
-      <ContactPicker 
-        contacts={contacts}
-        onChange={({ target }) => setContact(target.value)}
-        value={contact}
-      />
-      <button type='submit'>Add Appointment</button>
-    </form>
+        <ContactPicker
+          name='contact'
+          value={contact}
+          contacts={contacts}
+          onChange={({ target }) => setContact(target.value)} 
+        />
+        <button type='submit'>Add Appointment</button>
+      </form>
+    </>
   );
 };

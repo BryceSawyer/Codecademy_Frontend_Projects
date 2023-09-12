@@ -5,16 +5,16 @@ import { AppointmentsPage } from "./containers/appointmentsPage/AppointmentsPage
 import { ContactsPage } from "./containers/contactsPage/ContactsPage";
 
 function App() {
-  const [ contacts, setContacts ] = useState([]);
-    const addContact = (contact) => {
-      setContacts([ contact, ...contacts])
-    }
 
-  const [ appointments, setAppointments ] = useState([]);
-    const addAppointment = (appoinment) => {
-      setAppointments([ appoinment, ...appointments ])
-    }
-  
+ const [contacts, setContacts] = useState([]);
+ const addContact = (contact) => {
+  setContacts(contacts => [...contacts, contact]);
+ };
+
+ const [appointments, setAppointments] = useState([]);
+ const addAppointment = (appointment) => {
+  setAppointments(appointments => [...appointments, appointment]);
+ };
 
   const router = createBrowserRouter(createRoutesFromElements(
     <Route path="/" element={ <Root/> }>
